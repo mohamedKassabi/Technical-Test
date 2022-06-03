@@ -42,15 +42,7 @@ public class ApplicationExceptionHandler {
 		return errorMap;
 	}
 
-//	@ResponseStatus(HttpStatus.BAD_REQUEST)
-//	@ExceptionHandler(InvalidFormatException.class)
-//	public Map<String, String> handleHttpMessageNotReadableException(InvalidFormatException ex) {
-//		Map<String, String> errorMap = new HashMap<>();
-//		errorMap.put("errorMessage", "invalid date");
-//
-//		return errorMap;
-//
-//	}
+
 
 	@ResponseStatus(HttpStatus.BAD_REQUEST)
 	@ExceptionHandler(InvalidUserException.class)
